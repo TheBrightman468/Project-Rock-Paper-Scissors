@@ -1,10 +1,10 @@
 Create function that randomly returns either "Rock" "Paper" or "Scissors" as an output
-function moveSelector() {
+function getComputerChoice() {
     *code for random move selection*
 }
 
 Return "Rock" "Paper" or "Scissors" and store output in variable 
-let gameOutput = (function output)
+let computerChoice = (function output)
 
 Desired output = "Rock" or "Paper" or "Scissors" by random choice
 
@@ -21,7 +21,7 @@ Store return integer in variable
 let randomInt = getRandomInt();
 
 Correlate that value with the string values using a function
-function moveSelector() {
+function getComputerChoice() {
     if (randomInt === 1) {
         return "Rock"
     } else if (randomInt === 2) {
@@ -34,4 +34,4 @@ function moveSelector() {
 }
 
 Store that value in a variable by calling the function
-let gameOutput = moveSelector();
+let computerChoice = getComputerChoice();
