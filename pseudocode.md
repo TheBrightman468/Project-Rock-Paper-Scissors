@@ -91,4 +91,19 @@ This function's purpose is to play 5 rounds of the playRound function
 Get input from user using prompt()
     let playerSelection = prompt("Rock, Paper, or Scissors?");
 
-Use console.log() to display the result of each round and the winner at the end
+Use console.log() to display the result of each round 
+
+    Need playRound to return its value to the console.log() at the end of each round
+
+Use console.log() to display end game winner and final tally
+
+    Need a game counter to keep track of the score
+    
+    Use less than, greater than or equals to comparison to determine the end winner after all 5 rounds have been played
+        if (playerWin > computerWin) {
+            return `You win!! ${playerWin} - ${computerWin}`
+        } else if (playerWin < computerWin) {
+            return `You lose!! ${playerWin} - ${computerWin}`
+        } else {
+            return "Something wrong here.."
+        }
