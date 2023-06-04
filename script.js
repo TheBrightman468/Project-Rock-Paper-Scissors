@@ -16,4 +16,4 @@ function getComputerChoice() {
         return "Something wrong here.."
     }
 }
-let computerChoice = getComputerChoice();
+let computerSelection = getComputerChoice();

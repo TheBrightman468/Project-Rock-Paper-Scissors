@@ -4,7 +4,7 @@ function getComputerChoice() {
 }
 
 Return "Rock" "Paper" or "Scissors" and store output in variable 
-let computerChoice = (function output)
+let computerSelection = (function output)
 
 Desired output = "Rock" or "Paper" or "Scissors" by random choice
 
@@ -34,4 +34,16 @@ function getComputerChoice() {
 }
 
 Store that value in a variable by calling the function
-let computerChoice = getComputerChoice();
+let computerSelection = getComputerChoice();
+
+
+
+Write a function that plays a single round of rock paper scissors
+
+Function accepts two parameters: playerSelection and computerSelection
+
+playerSelection must be case-insensitive
+
+Function should Return a string that declares the winner and the result of the round
+i.e "You lose! Paper beats Rock". 
+
