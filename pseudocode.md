@@ -38,11 +38,16 @@ let computerSelection = getComputerChoice();
 
 
 
-Write a function that plays a single round of rock paper scissors
+Write a function that plays a single round of rock paper scissors.
 
 Function accepts two parameters: playerSelection and computerSelection
+    function playRound(playerSelection, computerSelection) {
 
-playerSelection must be case-insensitive
+    }
+
+playerSelection must be case-insensitive; use toUpperCase method
+    return playerSelection.toUpperCase() === "ROCK"; 
+
 
 Function should Return a string that declares the winner and the result of the round
 i.e "You lose! Paper beats Rock". 
