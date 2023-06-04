@@ -46,6 +46,18 @@ Function accepts two parameters: playerSelection and computerSelection
             return "It's a draw!"
         } else if (playerSelection.toUpperCase() === "ROCK" && computerSelection === "PAPER") {
             return "You lose! Paper beats rock"
+        } else if (playerSelection.toUpperCase() === "ROCK" && computerSelection === "SCISSORS") {
+            return "You win! Rock beats scissors"
+        } else if (playerSelection.toUpperCase() === "PAPER" && computerSelection === "SCISSORS") {
+            return "You lose! Scissors beats paper"
+        } else if (playerSelection.toUpperCase() === "PAPER" && computerSelection === "ROCK") {
+            return "You win! Paper beats rock"
+        } else if (playerSelection.toUpperCase() === "SCISSORS" && computerSelection === "ROCK") {
+            return "You lose! Rock beats scissors"
+        } else if (playerSelection.toUpperCase() === "SCISSORS" && computerSelection === "PAPER") {
+            return "You win! Scissors beats paper"
+        } else {
+            return "Something wrong here.."
         }
     }
 
