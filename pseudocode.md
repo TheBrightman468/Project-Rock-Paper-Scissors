@@ -95,14 +95,19 @@ Use console.log() to display the result of each round
 
     Need playRound to return its value to the console.log() at the end of each round
 
-Use console.log() to display end game winner and final tally
+Use console.log() to display end game winner and final tally.
+Store playRound() value in a variable:
+    let roundResult = playRound(playerSelection, computerSelection);
 
     Need a game counter to keep track of the score.
         Declare variables playerWin & computerWin, each with an initial value of 0.
         Increment each value by 1 each time their corresponding playRound value is equal to a win.
+            if (roundResult === "It's a draw!")
     
     Use less than, greater than or equals to comparison to determine the end winner after all 5 rounds have been played
-        if (playerWin > computerWin) {
+        if (playerWin === computerWin) {
+            return `It's a draw!! ${playerWin} - ${computerWin}`
+        } else if (playerWin > computerWin) {
             return `You win!! ${playerWin} - ${computerWin}`
         } else if (playerWin < computerWin) {
             return `You lose!! ${playerWin} - ${computerWin}`

@@ -16,7 +16,9 @@ function getComputerChoice() {
         return "Something wrong here.."
     }
 }
+
 let computerSelection = getComputerChoice();
+let playerSelection = prompt("Rock, Paper, or Scissors?");
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toUpperCase() === computerSelection) {
@@ -37,3 +39,5 @@ function playRound(playerSelection, computerSelection) {
         return "Something wrong here.."
     }
 }
+
+let roundResult = playRound(playerSelection, computerSelection);
