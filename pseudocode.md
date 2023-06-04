@@ -85,6 +85,49 @@ SCISSORS: "It's a draw!", "You lose! ROCK beats scissors". "You win! Scissors be
 
 
 Create new function called game(). Include playRound function withis this function.
+function game() {
+    let randomInt = getRandomInt();
+    let computerSelection = getComputerChoice();
+    let playerWin = 0;
+    let computerWin = 0;
+
+    getRandomInt();
+    getComputerChoice();
+    let playerSelection = prompt("Rock, Paper, or Scissors?");
+    let roundResult = playRound(playerSelection, computerSelection);
+    console.log(roundResult);
+    keepScore();
+
+    getRandomInt();
+    getComputerChoice();
+    playerSelection = prompt("Rock, Paper, or Scissors?");
+    roundResult = playRound(playerSelection, computerSelection);
+    console.log(roundResult);
+    keepScore();
+
+    getRandomInt();
+    getComputerChoice();
+    playerSelection = prompt("Rock, Paper, or Scissors?");
+    roundResult = playRound(playerSelection, computerSelection);
+    console.log(roundResult);
+    keepScore();
+
+    getRandomInt();
+    getComputerChoice();
+    playerSelection = prompt("Rock, Paper, or Scissors?");
+    roundResult = playRound(playerSelection, computerSelection);
+    console.log(roundResult);
+    keepScore();
+
+    getRandomInt();
+    getComputerChoice();
+    playerSelection = prompt("Rock, Paper, or Scissors?");
+    roundResult = playRound(playerSelection, computerSelection);
+    console.log(roundResult);
+    keepScore();
+
+    console.log(finalResult());
+}
 
 This function's purpose is to play 5 rounds of the playRound function
 
@@ -111,13 +154,13 @@ Store playRound() value in a variable:
                 ++computerWin;
             }
     
-    Use less than, greater than or equals to comparison to determine the end winner after all 5 rounds have been played
-        if (playerWin === computerWin) {
-            return `It's a draw!! ${playerWin} - ${computerWin}`
-        } else if (playerWin > computerWin) {
-            return `You win!! ${playerWin} - ${computerWin}`
-        } else if (playerWin < computerWin) {
-            return `You lose!! ${playerWin} - ${computerWin}`
-        } else {
-            return "Something wrong here.."
+    Create a function to use less than, greater than or equals to comparison to determine the end winner after all 5 rounds have been played
+        function finalResult() {
+            if (playerWin === computerWin) {
+                return `It's a draw!! ${playerWin} - ${computerWin}`
+            } else if (playerWin > computerWin) {
+                return `You win!! ${playerWin} - ${computerWin}`
+            } else if (playerWin < computerWin) {
+                return `You lose!! ${playerWin} - ${computerWin}`
+            }
         }
