@@ -97,7 +97,9 @@ Use console.log() to display the result of each round
 
 Use console.log() to display end game winner and final tally
 
-    Need a game counter to keep track of the score
+    Need a game counter to keep track of the score.
+        Declare variables playerWin & computerWin, each with an initial value of 0.
+        Increment each value by 1 each time their corresponding playRound value is equal to a win.
     
     Use less than, greater than or equals to comparison to determine the end winner after all 5 rounds have been played
         if (playerWin > computerWin) {
