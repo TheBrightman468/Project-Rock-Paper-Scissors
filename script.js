@@ -3,7 +3,6 @@ function getRandomInt(min, max) {
     max = Math.floor(4);
     return Math.floor(Math.random() * (max - min) + min);
 }
-let randomInt = getRandomInt();
 
 function getComputerChoice() {
     if (randomInt === 1) {
@@ -16,9 +15,6 @@ function getComputerChoice() {
         return "Something wrong here.."
     }
 }
-
-let computerSelection = getComputerChoice();
-let playerSelection = prompt("Rock, Paper, or Scissors?");
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toUpperCase() === computerSelection) {
@@ -40,13 +36,6 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-let roundResult = playRound(playerSelection, computerSelection);
-
-console.log(roundResult);
-
-let playerWin = 0;
-let computerWin = 0;
-
 function keepScore() { 
     if (roundResult === "It's a draw!") {
         ++playerWin;
@@ -58,6 +47,3 @@ function keepScore() {
     }
 }
 
-keepScore();
-
-console.log(playerWin, computerWin);
