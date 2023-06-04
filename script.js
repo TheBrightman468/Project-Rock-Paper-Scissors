@@ -69,29 +69,29 @@ function finalResult() {
 }
 
 function game() {
-    getRandomInt();
-    getComputerChoice();
+    randomInt = getRandomInt();
+    computerSelection = getComputerChoice();
     playerSelection = prompt("Rock, Paper, or Scissors?");
     roundResult = playRound(playerSelection, computerSelection);
     console.log(roundResult);
     keepScore();
 
-    getRandomInt();
-    getComputerChoice();
+    randomInt = getRandomInt();
+    computerSelection = getComputerChoice();
     playerSelection = prompt("Rock, Paper, or Scissors?");
     roundResult = playRound(playerSelection, computerSelection);
     console.log(roundResult);
     keepScore();
 
-    getRandomInt();
-    getComputerChoice();
+    randomInt = getRandomInt();
+    computerSelection = getComputerChoice();
     playerSelection = prompt("Rock, Paper, or Scissors?");
     roundResult = playRound(playerSelection, computerSelection);
     console.log(roundResult);
     keepScore();
 
-    getRandomInt();
-    getComputerChoice();
+    randomInt = getRandomInt();
+    computerSelection = getComputerChoice();
     playerSelection = prompt("Rock, Paper, or Scissors?");
     roundResult = playRound(playerSelection, computerSelection);
     console.log(roundResult);
