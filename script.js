@@ -41,3 +41,5 @@ function playRound(playerSelection, computerSelection) {
 }
 
 let roundResult = playRound(playerSelection, computerSelection);
+let playerWin = 0;
+let computerWin = 0;
