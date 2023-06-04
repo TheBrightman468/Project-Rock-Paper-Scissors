@@ -1,3 +1,14 @@
+let randomInt = getRandomInt();
+let computerSelection = getComputerChoice();
+let playerSelection = prompt("Rock, Paper, or Scissors?");
+let roundResult = playRound(playerSelection, computerSelection);
+let playerWin = 0;
+let computerWin = 0;
+
+console.log(roundResult);
+keepScore();
+game();
+
 function getRandomInt(min, max) {
     min = Math.ceil(1);
     max = Math.floor(4);
@@ -55,4 +66,36 @@ function finalResult() {
     } else if (playerWin < computerWin) {
         return `You lose!! ${playerWin} - ${computerWin}`
     }
+}
+
+function game() {
+    getRandomInt();
+    getComputerChoice();
+    playerSelection = prompt("Rock, Paper, or Scissors?");
+    roundResult = playRound(playerSelection, computerSelection);
+    console.log(roundResult);
+    keepScore();
+
+    getRandomInt();
+    getComputerChoice();
+    playerSelection = prompt("Rock, Paper, or Scissors?");
+    roundResult = playRound(playerSelection, computerSelection);
+    console.log(roundResult);
+    keepScore();
+
+    getRandomInt();
+    getComputerChoice();
+    playerSelection = prompt("Rock, Paper, or Scissors?");
+    roundResult = playRound(playerSelection, computerSelection);
+    console.log(roundResult);
+    keepScore();
+
+    getRandomInt();
+    getComputerChoice();
+    playerSelection = prompt("Rock, Paper, or Scissors?");
+    roundResult = playRound(playerSelection, computerSelection);
+    console.log(roundResult);
+    keepScore();
+
+    console.log(finalResult());
 }
