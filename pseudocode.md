@@ -42,7 +42,11 @@ Write a function that plays a single round of rock paper scissors.
 
 Function accepts two parameters: playerSelection and computerSelection
     function playRound(playerSelection, computerSelection) {
-        
+        if (playerSelection.toUpperCase() === computerSelection) {
+            return "It's a draw!"
+        } else if (playerSelection.toUpperCase() === "ROCK" && computerSelection === "PAPER") {
+            return "You lose! Paper beats rock"
+        }
     }
 
 playerSelection must be case-insensitive; use toUpperCase method
@@ -58,3 +62,10 @@ To test: Set constant variable value of playerSelection to "rock"
 
 then use console log
     console.log(playRound(playerSelection, computerSelection));
+
+
+
+Possibilities:
+ROCK: "It's a draw!", "You lose! PAPER beats rock", "You win! Rock beats SCISSORS"
+PAPER: "It's a draw!", "You lose! SCISSORS beats paper", "You win! Paper beats ROCK"
+SCISSORS: "It's a draw!", "You lose! ROCK beats scissors". "You win! Scissors beats PAPER"
