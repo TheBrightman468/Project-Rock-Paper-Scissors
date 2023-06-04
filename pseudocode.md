@@ -102,7 +102,14 @@ Store playRound() value in a variable:
     Need a game counter to keep track of the score.
         Declare variables playerWin & computerWin, each with an initial value of 0.
         Increment each value by 1 each time their corresponding playRound value is equal to a win.
-            if (roundResult === "It's a draw!")
+            if (roundResult === "It's a draw!") {
+                ++playerWin;
+                ++computerWin;
+            } else if (roundResult === "You win! Rock beats scissors" || "You win! Paper beats rock" || "You win! Scissors beats paper") {
+                ++playerWin;
+            } else if (roundResult === "You lose! Paper beats rock" || "You lose! Scissors beats paper" || "You lose! Rock beats scissors") {
+                ++computerWin;
+            }
     
     Use less than, greater than or equals to comparison to determine the end winner after all 5 rounds have been played
         if (playerWin === computerWin) {
