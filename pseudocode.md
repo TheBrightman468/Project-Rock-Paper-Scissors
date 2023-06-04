@@ -81,3 +81,14 @@ Possibilities:
 ROCK: "It's a draw!", "You lose! PAPER beats rock", "You win! Rock beats SCISSORS"
 PAPER: "It's a draw!", "You lose! SCISSORS beats paper", "You win! Paper beats ROCK"
 SCISSORS: "It's a draw!", "You lose! ROCK beats scissors". "You win! Scissors beats PAPER"
+
+
+
+Create new function called game(). Include playRound function withis this function.
+
+This function's purpose is to play 5 rounds of the playRound function
+
+Get input from user using prompt()
+    let playerSelection = prompt("Rock, Paper, or Scissors?");
+
+Use console.log() to display the result of each round and the winner at the end

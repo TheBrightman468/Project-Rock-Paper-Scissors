@@ -37,6 +37,3 @@ function playRound(playerSelection, computerSelection) {
         return "Something wrong here.."
     }
 }
-
-const playerSelection = "Rock";
-console.log(playRound(playerSelection, computerSelection));
