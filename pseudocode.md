@@ -42,10 +42,11 @@ Write a function that plays a single round of rock paper scissors.
 
 Function accepts two parameters: playerSelection and computerSelection
     function playRound(playerSelection, computerSelection) {
-
+        
     }
 
 playerSelection must be case-insensitive; use toUpperCase method
+computerSelection must also be upper case for comparisons; change return values to uppercase
     return playerSelection.toUpperCase() === "ROCK"; 
 
 

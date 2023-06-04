@@ -7,11 +7,11 @@ let randomInt = getRandomInt();
 
 function getComputerChoice() {
     if (randomInt === 1) {
-        return "Rock"
+        return "ROCK"
     } else if (randomInt === 2) {
-        return "Paper"
+        return "PAPER"
     } else if (randomInt === 3) {
-        return "Scissors"
+        return "SCISSORS"
     } else {
         return "Something wrong here.."
     }
