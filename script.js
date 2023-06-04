@@ -41,5 +41,23 @@ function playRound(playerSelection, computerSelection) {
 }
 
 let roundResult = playRound(playerSelection, computerSelection);
+
+console.log(roundResult);
+
 let playerWin = 0;
 let computerWin = 0;
+
+function keepScore() { 
+    if (roundResult === "It's a draw!") {
+        ++playerWin;
+        ++computerWin;
+    } else if (roundResult === "You win! Rock beats scissors" || roundResult === "You win! Paper beats rock" || roundResult === "You win! Scissors beats paper") {
+        ++playerWin;
+    } else if (roundResult === "You lose! Paper beats rock" || roundResult === "You lose! Scissors beats paper" || roundResult === "You lose! Rock beats scissors") {
+        ++computerWin;
+    }
+}
+
+keepScore();
+
+console.log(playerWin, computerWin);
