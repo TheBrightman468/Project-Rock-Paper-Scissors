@@ -52,3 +52,8 @@ playerSelection must be case-insensitive; use toUpperCase method
 Function should Return a string that declares the winner and the result of the round
 i.e "You lose! Paper beats Rock". 
 
+To test: Set constant variable value of playerSelection to "rock"
+    const playerSelection = "rock";
+
+then use console log
+    console.log(playRound(playerSelection, computerSelection));
