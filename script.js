@@ -47,3 +47,12 @@ function keepScore() {
     }
 }
 
+function finalResult() {
+    if (playerWin === computerWin) {
+        return `It's a draw!! ${playerWin} - ${computerWin}`
+    } else if (playerWin > computerWin) {
+        return `You win!! ${playerWin} - ${computerWin}`
+    } else if (playerWin < computerWin) {
+        return `You lose!! ${playerWin} - ${computerWin}`
+    }
+}
